@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #0b0c0e;
+    color: #f3f4f6;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+    background-color: #0b0c0e;
+  }
+
+  /* Custom technical scrollbar without any gradients */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0e1013;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #252830;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #363b46;
+  }
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
